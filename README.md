@@ -10,7 +10,7 @@ Quick Start
 --------------------
 
 ```
-docker run --name=pocketmine-mp -d -p 19132:19132/udp 5t111111/pocketmine-mp:latest
+docker run --name=pocketmine-mp -d -p 19132:19132/udp da9l/pocketmine-mp:latest
 ```
 
 Data Persistence
@@ -25,7 +25,7 @@ mkdir /opt/pocketmine-mp
 
 ```
 docker run --name=pocketmine-mp -d -v /opt/pocketmine-mp:/usr/local/pocketmine-mp \
-    -p 19132:19132/udp 5t111111/pocketmine-mp:latest
+    -p 19132:19132/udp da9l/pocketmine-mp:latest
 ```
 
 You can also edit `server.properties`. 
@@ -37,7 +37,7 @@ Set the environment variable `UPDATE_LATEST = YES` to force update the latest st
 
 ```
 docker run --name=pocketmine-mp -d -v /opt/pocketmine-mp:/usr/local/pocketmine-mp \
-    -p 19132:19132/udp -e "UPDATE_LATEST=YES" 5t111111/pocketmine-mp:latest
+    -p 19132:19132/udp -e "UPDATE_LATEST=YES" da9l/pocketmine-mp:latest
 ```
 
 Update Beta
@@ -47,5 +47,17 @@ Set the environment variable `UPDATE_LATEST_BETA = YES` to force update the late
 
 ```
 docker run --name=pocketmine-mp -d -v /opt/pocketmine-mp:/usr/local/pocketmine-mp \
-    -p 19132:19132/udp -e "UPDATE_LATEST_BETA=YES" 5t111111/pocketmine-mp:latest
+    -p 19132:19132/udp -e "UPDATE_LATEST_BETA=YES" da9l/pocketmine-mp:latest
 ```
+
+Update Dev
+--------------------
+
+Set the environment variable `UPDATE_LATEST_DEV = YES` to force update the latest development release.
+
+```
+docker run --name=pocketmine-mp -d -v /opt/pocketmine-mp:/usr/local/pocketmine-mp \
+    -p 19132:19132/udp -e "UPDATE_LATEST_DEV=YES" da9l/pocketmine-mp:latest
+```
+
+http://sourceforge.net/projects/mcrcon/
