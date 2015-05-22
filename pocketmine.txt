@@ -1,0 +1,14 @@
+docker run --name=pocketmine-mp -d -v /opt/pocketmine-mp:/pocketmine/PocketMine-MP -p 19132:19132 -e "UPDATE_LATEST_DEV=YES" da9l/pocketmine-mp:latest
+docker run --name=da9l-pocketmine-mp -d -v /home/core/pocketmine-mp:/pocketmine/PocketMine-MP -p 19132:19132 -p 19132:19132/udp -e "UPDATE_LATEST_BETA=YES" da9l/docker-pocketmine-mp:latest
+docker exec -it da9l-pockemine-mp bash
+RCON pwd:uKsq1C8Cqu
+
+
+
+https://forums.pocketmine.net/plugins/essentialspe.886/download?version=1722
+https://forums.pocketmine.net/plugins/chatbubbles.671/download?version=1409
+https://forums.pocketmine.net/plugins/manyworlds.1042/download?version=2145
+https://forums.pocketmine.net/plugins/worldgm.844/download?version=2073
+https://forums.pocketmine.net/plugins/volt.568/download?version=1999
+https://forums.pocketmine.net/plugins/commandsigns.958/download?version=1856
+https://forums.pocketmine.net/plugins/autoupdater.854/download?version=1700

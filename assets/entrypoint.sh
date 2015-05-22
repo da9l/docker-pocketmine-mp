@@ -32,5 +32,14 @@ if [ "$UPDATE_LATEST_DEV" = 'YES' ]; then
     chown -R pocketmine:pocketmine /pocketmine
 fi
 
+wget -q -O - https://forums.pocketmine.net/plugins/essentialspe.886/download?version=1722 > plugins/EssentialsPE.phar
+wget -q -o - https://forums.pocketmine.net/plugins/chatbubbles.671/download?version=1409 > plugins/chatbubbles.phar
+wget -q -o - https://forums.pocketmine.net/plugins/manyworlds.1042/download?version=2145 > plugins/manyworlds.phar
+wget -q -o - https://forums.pocketmine.net/plugins/worldgm.844/download?version=2073 > plugins/worldgm.phar
+wget -q -o - https://forums.pocketmine.net/plugins/volt.568/download?version=1999 > plugins/volt.phar
+wget -q -o - https://forums.pocketmine.net/plugins/commandsigns.958/download?version=1856 > plugins/commandsigns.phar
+wget -q -o - https://forums.pocketmine.net/plugins/autoupdater.854/download?version=1700 > plugins/autoupdater.phar
+
+
 #su - pocketmine "/pocketmine/PocketMine-MP/start.sh"
 /pocketmine/PocketMine-MP/start.sh
