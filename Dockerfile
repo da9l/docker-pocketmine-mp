@@ -1,6 +1,6 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.04.2
 
-MAINTAINER 5t111111 https://github.com/5t111111
+MAINTAINER da9l https://github.com/da9l
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
