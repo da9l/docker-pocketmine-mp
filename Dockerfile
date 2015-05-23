@@ -42,7 +42,7 @@ RUN wget -q -O /pocketmine/PocketMine-MP/plugins/manyworlds.phar https://forums.
 RUN wget -q -O /pocketmine/PocketMine-MP/plugins/worldgm.phar https://forums.pocketmine.net/plugins/worldgm.844/download?version=2073
 RUN wget -q -O /pocketmine/PocketMine-MP/plugins/volt.phar https://forums.pocketmine.net/plugins/volt.568/download?version=1999
 RUN wget -q -O /pocketmine/PocketMine-MP/plugins/commandsigns.phar https://forums.pocketmine.net/plugins/commandsigns.958/download?version=1856
-RUN wget -q -O /pocketmine/PocketMine-MP/plugins/autoupdater.phar https://forums.pocketmine.net/plugins/autoupdater.854/download?version=1700
+#RUN wget -q -O /pocketmine/PocketMine-MP/plugins/autoupdater.phar https://forums.pocketmine.net/plugins/autoupdater.854/download?version=1700
 
 
 #RUN /pocketmine/plugins.sh
