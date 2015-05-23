@@ -2,12 +2,18 @@ FROM ubuntu:14.04.2
 
 MAINTAINER da9l https://github.com/da9l
 
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN apt-get install -y \
-        wget \
-        perl gcc g++ make automake libtool autoconf m4 \
-        gcc-multilib
+RUN apt-get update -y && \
+        apt-get install -y \
+        autoconf \
+        automake \
+        g++ \
+        gcc \
+        gcc-multilib \
+        libtool \
+        m4 \
+        make \
+        perl \
+        wget
 
 RUN adduser --gecos 'PocketMine-MP' --disabled-password --home /pocketmine pocketmine
 
