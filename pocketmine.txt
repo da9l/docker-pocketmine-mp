@@ -1,5 +1,6 @@
 docker run --name=pocketmine-mp -d -v /opt/pocketmine-mp:/pocketmine/PocketMine-MP -p 19132:19132 -e "UPDATE_LATEST_DEV=YES" da9l/pocketmine-mp:latest
 docker run --name=da9l-pocketmine-mp -d -v /home/core/pocketmine-mp:/pocketmine/PocketMine-MP -p 19132:19132 -p 19132:19132/udp -e "UPDATE_LATEST_BETA=YES" da9l/docker-pocketmine-mp:latest
+docker run --name=da9l-pocketmine-mp:mods2 -d -p 19132:19132 -p 19132:19132/udp -e "UPDATE_LATEST_BETA=YES" da9l/docker-pocketmine-mp:latest
 docker exec -it da9l-pockemine-mp bash
 RCON pwd:uKsq1C8Cqu
 

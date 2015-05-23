@@ -17,7 +17,9 @@ RUN chown -R pocketmine:pocketmine /pocketmine
 
 COPY assets/server.properties /pocketmine/server.properties.original
 COPY assets/entrypoint.sh /pocketmine/entrypoint.sh
+COPY assets/plugins.sh /pocketmine/plugins.sh
 
+RUN chmod 755 /pocketmine/plugins.sh
 RUN chmod 755 /pocketmine/entrypoint.sh
 
 USER pocketmine
@@ -26,6 +28,7 @@ ENV GNUPGHOME /pocketmine
 
 RUN gpg --keyserver pgp.mit.edu --recv-key 2280B75B
 RUN cd PocketMine-MP && wget -q -O - http://cdn.pocketmine.net/installer.sh | bash -s - -v beta
+RUN cd /pocketmine && ./plugins.sh
 
 EXPOSE 19132
 EXPOSE 19132/udp
