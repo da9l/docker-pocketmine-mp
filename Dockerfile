@@ -19,6 +19,7 @@ RUN adduser --gecos 'PocketMine-MP' --disabled-password --home /pocketmine pocke
 
 WORKDIR /pocketmine
 RUN mkdir /pocketmine/PocketMine-MP
+RUN mkdir /pocketmine/PocketMine-MP/plugins
 RUN chown -R pocketmine:pocketmine /pocketmine
 
 COPY assets/server.properties /pocketmine/server.properties.original
