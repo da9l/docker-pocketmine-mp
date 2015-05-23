@@ -49,5 +49,6 @@ RUN wget -q -O /pocketmine/PocketMine-MP/plugins/commandsigns.phar https://forum
 
 EXPOSE 19132
 EXPOSE 19132/udp
+EXPOSE 7000
 
 ENTRYPOINT ["./entrypoint.sh"]
